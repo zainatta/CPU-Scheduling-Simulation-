@@ -63,15 +63,26 @@ To remove the compiled binary:
 make clean
 ```
 
-## Example Output (Truncated)
+## Example Output 
 
 ```
 ==== Test Case 1 ====
 FCFS: Calculated: Turnaround: 15.00, Waiting: 7.33, Response: 7.33
       Expected:   Turnaround: 15.00, Waiting: 7.33, Response: 7.33
-SJF:  ...
-RR (Quantum = 4): ...
+SJF:  Calculated: Turnaround: 15.00, Waiting: 7.33, Response: 7.33
+      Expected:   Turnaround: 15.00, Waiting: 7.33, Response: 7.33
+RR (Quantum = 4): Calculated: Turnaround: 19.33, Waiting: 11.67, Response: 3.00
+         Expected:   Turnaround: 19.33, Waiting: 11.67, Response: 3.00
 >>> Test Case 1 PASSED.
+
+==== Test Case 2 ====
+FCFS: Calculated: Turnaround: 5.67, Waiting: 1.67, Response: 1.67
+      Expected:   Turnaround: 5.67, Waiting: 1.67, Response: 1.67
+SJF:  Calculated: Turnaround: 5.67, Waiting: 1.67, Response: 1.67
+      Expected:   Turnaround: 5.67, Waiting: 1.67, Response: 1.67
+RR (Quantum = 2): Calculated: Turnaround: 6.33, Waiting: 2.33, Response: 0.33
+         Expected:   Turnaround: 5.67, Waiting: 1.67, Response: 1.00
+scheduler_test: scheduler_test.c:46: run_test_case: Assertion `floatEquals(mRr.avgTurnaround, expectedRr.avgTurnaround, TOLERANCE)' failed.
 ```
 
 ## Notes
