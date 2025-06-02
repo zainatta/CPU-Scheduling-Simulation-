@@ -3,11 +3,11 @@
 This project implements three fundamental CPU scheduling algorithms in C as part of an Operating Systems course project.
 
 ## Algorithms Implemented
-
+```
 1. **FCFS (First Come First Serve)**
 2. **SJF (Shortest Job First - Non-Preemptive)**
 3. **Round Robin (RR)**
-
+```
 Each algorithm computes the following performance metrics:
 - Average Turnaround Time
 - Average Waiting Time
